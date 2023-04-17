@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pinterest image</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(255, 0, 140);
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit ,minmax(100px,1fr));
+            grid-gap: 3px;
+            grid-auto-flow: dense;
+        }
+        .container img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .horizontal{
+            grid-column: auto / span 2 ;
+        }
+        .vertical{
+           grid-row: auto / span 2;
+        }
+        .big{
+            grid-column: auto / span 2;
+             grid-row: span 2;
+        }
+    </style>
+</head>
+<body>
+    <h1  class="animate__animated animate__flip" id="pin" >Pinterest</h1>
+    <h1  class="animate__animated animate__backInLeft" id="pin2" >facebook</h1>
+    <h1  class="animate__animated animate__backInRight " >instagram</h1>
+    <h1  class="animate__animated animate__bounceInLeft " >twitter</h1>
+
+    <div class="container">
+        <div><img src="./img/p1.jpg" alt=""></div>
+        <div class="vertical"><img src="./img/p21.jpg" alt=""> </div>
+        <div class="horizontal"> <img src="./img/p18.jpg" alt=""> </div>
+        <div><img src="./img/p1.jpg" alt=""></div>
+        <div><img src="./img/p5.jpg" alt=""></div>
+        <div class="big" > <img src="./img/p8.jpg" alt=""> </div>
+        <div><img src="./img/p3.jpg" alt=""></div>
+        <div class="vertical"><img src="./img/p2.jpg" alt=""> </div>
+        <div><img src="./img/p6.jpg" alt=""></div>
+        <div class="horizontal"> <img src="./img/p16.avif" alt=""> </div>
+        <div><img src="./img/p21.jpg" alt=""></div>
+        <div class="big" > <img src="./img/p14.jpg" alt=""> </div>
+        <div><img src="./img/p9.jpg" alt=""></div>
+        <div class="horizontal"> <img src="./img/p10.jpg" alt=""> </div>
+        <div><img src="./img/p13.avif" alt=""></div>
+        <div class="big" > <img src="./img/p7.jpg" alt=""> </div>
+        <div><img src="./img/p17.avif" alt=""></div>
+        <div class="vertical"><img src="./img/p18.jpg" alt=""> </div>
+        <div><img src="./img/p1.jpg" alt=""></div>
+        <div class="vertical"><img src="./img/p21.jpg" alt=""> </div>
+        <div class="horizontal"> <img src="./img/p18.jpg" alt=""> </div>
+        <div><img src="./img/p1.jpg" alt=""></div>
+        <div><img src="./img/p5.jpg" alt=""></div>
+        <div class="big" > <img src="./img/p8.jpg" alt=""> </div>
+        <div><img src="./img/p3.jpg" alt=""></div>
+        <div class="vertical"><img src="./img/p2.jpg" alt=""> </div>
+        <div><img src="./img/p6.jpg" alt=""></div>
+        <div class="horizontal"> <img src="./img/p16.avif" alt=""> </div>
+        <div><img src="./img/p21.jpg" alt=""></div>
+        <div class="big" > <img src="./img/p14.jpg" alt=""> </div>
+        <div><img src="./img/p9.jpg" alt=""></div>
+        <div class="horizontal"> <img src="./img/p10.jpg" alt=""> </div>
+        <div><img src="./img/p13.avif" alt=""></div>
+        <div class="big" > <img src="./img/p7.jpg" alt=""> </div>
+        <div><img src="./img/p17.avif" alt=""></div>
+        <div class="vertical"><img src="./img/p18.jpg" alt=""> </div>
+    </div>
+
+<!-- 
+    <ul id="divall">
+        <li>div1</li>
+        <li>div2</li>
+        <li>div3</li>
+    </ul>
+    <script>
+        const tagname=document.getElementsByTagName('h1');
+        for(const text of tagname){
+           console.log(text.innerText);
+        }
+       
+        const color1=document.getElementById('pin');
+        color1.style.textAlign='center';
+        // color1.style.textAlign='right';
+
+        const color=document.getElementById('pin2');
+        color.innerText='facebook by javascript';
+
+     const li= document.createElement('li');
+     li.innerText='div 5 append';
+     const container =document.getElementById('divall');
+     container.appendChild(li)
+
+
+    </script> -->
+</body>
+</html>
